@@ -22,6 +22,4 @@ app.listen(PORT, () => {
   
 
 app.use("/auth",authentication);
-app.get("/rutaprivada",authenticateJWT,(req,res)=>{
-
-})
+app.use("/otro",authenticateJWT,authentication);
